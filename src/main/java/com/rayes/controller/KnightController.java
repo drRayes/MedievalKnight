@@ -9,7 +9,6 @@ import org.springframework.web.servlet.ModelAndView;
 public class KnightController {
 
 
-
     @RequestMapping(value = "/knight", method = RequestMethod.GET)
     public ModelAndView knight() {
         return new ModelAndView("knight");

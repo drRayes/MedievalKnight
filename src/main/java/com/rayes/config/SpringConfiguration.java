@@ -47,17 +47,42 @@ public class SpringConfiguration implements WebMvcConfigurer {
         System.out.println("Hibernate initiated");
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.h2.Driver");
-        dataSource.setUrl("jdbc:h2:~/test");
+        dataSource.setUrl("jdbc:h2:./data/db");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         System.out.println("connection es");
         return dataSource;
     }
 
+//    @Autowired
+//    @Bean(name="secondDataSource")
+//    public DataSource secondGetH2() {
+//        System.out.println("Hibernate initiated second");
+//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//        dataSource.setDriverClassName("org.h2.Driver");
+//        dataSource.setUrl("jdbc:h2:./data/db");
+//        dataSource.setUsername("root");
+//        dataSource.setPassword("root");
+//        System.out.println("connection es second");
+//        return dataSource;
+//    }
+//
+//    @Autowired
+//    @Bean(name="secondSessionFactory")
+//    public SessionFactory secondGetSession(DataSource dataSource) {
+//        LocalSessionFactoryBuilder factoryBuilder = new LocalSessionFactoryBuilder(secondGetH2());
+//        factoryBuilder.addProperties(getHibernateProperties());
+//        factoryBuilder.addAnnotatedClass(Knight.class);
+//        factoryBuilder.addAnnotatedClasses(Item.class);
+//        factoryBuilder.addAnnotatedClasses(Inventory.class);
+//        factoryBuilder.addAnnotatedClasses(Shop.class);
+//        return factoryBuilder.buildSessionFactory();
+//    }
+
     @Autowired
     @Bean(name="sessionFactory")
     public SessionFactory getSession(DataSource dataSource) {
-        LocalSessionFactoryBuilder factoryBuilder = new LocalSessionFactoryBuilder(dataSource);
+        LocalSessionFactoryBuilder factoryBuilder = new LocalSessionFactoryBuilder(getH2());
         factoryBuilder.addProperties(getHibernateProperties());
         factoryBuilder.addAnnotatedClass(Knight.class);
         factoryBuilder.addAnnotatedClasses(Item.class);

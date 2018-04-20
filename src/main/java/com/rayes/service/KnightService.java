@@ -19,8 +19,6 @@ import java.util.List;
 @Service
 public class KnightService {
     @Autowired
-    SessionFactory sessionFactory;
-    @Autowired
     InventoryDao inventoryDao;
     @Autowired
     KnightDao knightDao;
