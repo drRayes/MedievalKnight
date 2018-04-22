@@ -1,0 +1,12 @@
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:18:48:18 +0300] "GET / HTTP/1.1" 200 239 http-bio-8080-exec-1 2240
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:18:48:18 +0300] "GET /resources/css/css.css HTTP/1.1" 200 8787 http-bio-8080-exec-4 212
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:18:48:18 +0300] "GET /resources/img/PlariumLogo.png HTTP/1.1" 200 78611 http-bio-8080-exec-5 10
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:18:48:21 +0300] "GET /knight HTTP/1.1" 200 792 http-bio-8080-exec-6 226
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:18:48:21 +0300] "GET /resources/js/app.js HTTP/1.1" 200 9685 http-bio-8080-exec-2 25
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:18:48:21 +0300] "GET /resources/js/jquery.js HTTP/1.1" 200 271751 http-bio-8080-exec-7 36
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:18:48:22 +0300] "GET /getKnightInventory/Parzival HTTP/1.1" 200 1428 http-bio-8080-exec-9 838
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:18:48:23 +0300] "GET /resources/img/armor/loricaSegmentata.jpg HTTP/1.1" 200 39947 http-bio-8080-exec-10 16
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:18:48:23 +0300] "GET /resources/img/weapon/bow.jpg HTTP/1.1" 304 - http-bio-8080-exec-8 47
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:18:48:26 +0300] "GET /getKnight/Parzival HTTP/1.1" 200 487 http-bio-8080-exec-4 59
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:18:48:26 +0300] "GET /resources/img/weapon/sword1.jpg HTTP/1.1" 200 29732 http-bio-8080-exec-1 17
+0:0:0:0:0:0:0:1 - - [13/Apr/2018:18:48:26 +0300] "GET /resources/img/armor/armor1.jpg HTTP/1.1" 200 51041 http-bio-8080-exec-5 68

@@ -169,6 +169,7 @@ $.ajax({
             url: "http://localhost:8080/shop",
             success: function(response) {
                 $("#shop").append("<h2>Shop</h2>");
+                $("#shop").append("<h2>Left click on the image to buy goods</h2>");
                 $("#shop").append("<table id='shopTable'/>");
                 for(var i = 0; i < response.length; i++) {
                     var item = response[i].item.name + "\n" + "Item value - " + response[i].item.value + "\n" + " Description - " +

@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [19/Apr/2018:11:09:41 +0300] "GET / HTTP/1.1" 200 283 http-bio-8080-exec-1 1670
+0:0:0:0:0:0:0:1 - - [19/Apr/2018:11:09:42 +0300] "GET /resources/css/css.css;jsessionid=55BDA3CFBFE8307399704C1A430E745A HTTP/1.1" 200 8787 http-bio-8080-exec-4 1554
+0:0:0:0:0:0:0:1 - - [19/Apr/2018:11:09:42 +0300] "GET /resources/img/PlariumLogo.png HTTP/1.1" 200 78611 http-bio-8080-exec-5 43
+0:0:0:0:0:0:0:1 - - [19/Apr/2018:11:09:44 +0300] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8080-exec-6 527
+0:0:0:0:0:0:0:1 - - [19/Apr/2018:11:09:48 +0300] "GET /knight HTTP/1.1" 500 11790 http-bio-8080-exec-7 3169
+0:0:0:0:0:0:0:1 - - [19/Apr/2018:11:15:55 +0300] "GET / HTTP/1.1" 200 239 http-bio-8080-exec-1 543
+0:0:0:0:0:0:0:1 - - [19/Apr/2018:11:15:56 +0300] "GET /resources/css/css.css HTTP/1.1" 200 8787 http-bio-8080-exec-4 350
+0:0:0:0:0:0:0:1 - - [19/Apr/2018:11:15:59 +0300] "GET /knight HTTP/1.1" 500 11790 http-bio-8080-exec-5 957
